@@ -1,0 +1,9 @@
+@use "globals.module.scss" as *;
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-c;
+}
