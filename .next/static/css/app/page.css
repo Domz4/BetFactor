@@ -15,8 +15,7 @@
 .authDialog_content__KseRM {
   background-color: white;
   border-radius: 6px;
-  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px,
-    hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
+  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -183,8 +182,8 @@
   padding: 8px 12px;
   outline: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-weight: 500;
   line-height: 1;
   border-radius: 4px;
@@ -201,7 +200,7 @@
   z-index: 1;
 }
 
-.sidebar_list__9LUFw {
+.sidebar_navlist__4_ZK2 {
   display: flex;
   justify-content: center;
   background-color: white;
@@ -217,8 +216,8 @@
   padding: 8px 12px;
   outline: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-weight: 500;
   line-height: 1;
   border-radius: 4px;
@@ -259,19 +258,19 @@
   animation-timing-function: ease;
 }
 
-.sidebar_content__rigF6[data-motion="from-start"] {
+.sidebar_content__rigF6[data-motion=from-start] {
   animation-name: sidebar_enterFromLeft__zwf0i;
 }
 
-.sidebar_content__rigF6[data-motion="from-end"] {
+.sidebar_content__rigF6[data-motion=from-end] {
   animation-name: sidebar_enterFromRight__OUZfo;
 }
 
-.sidebar_content__rigF6[data-motion="to-start"] {
+.sidebar_content__rigF6[data-motion=to-start] {
   animation-name: sidebar_exitToLeft__L5bQa;
 }
 
-.sidebar_content__rigF6[data-motion="to-end"] {
+.sidebar_content__rigF6[data-motion=to-end] {
   animation-name: sidebar_exitToRight__Bpsc5;
 }
 
@@ -291,11 +290,11 @@
   transition: width, transform 250ms ease;
 }
 
-.sidebar_indicator__jQMcM[data-state="visible"] {
+.sidebar_indicator__jQMcM[data-state=visible] {
   animation: sidebar_fadeIn__Xrlr3 200ms ease;
 }
 
-.sidebar_indicator__jQMcM[data-state="hidden"] {
+.sidebar_indicator__jQMcM[data-state=hidden] {
   animation: sidebar_fadeOut__1ICyZ 200ms ease;
 }
 
@@ -307,17 +306,16 @@
   background-color: white;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px,
-    hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
+  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
   height: var(--radix-navigation-menu-viewport-height);
   transition: width, height, 300ms ease;
 }
 
-.sidebar_viewport__b5_IF[data-state="open"] {
+.sidebar_viewport__b5_IF[data-state=open] {
   animation: sidebar_scaleIn__U7ht7 200ms ease;
 }
 
-.sidebar_viewport__b5_IF[data-state="closed"] {
+.sidebar_viewport__b5_IF[data-state=closed] {
   animation: sidebar_scaleOut__fKlAo 200ms ease;
 }
 
@@ -351,8 +349,8 @@
   outline: none;
   text-decoration: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 12px;
   border-radius: 6px;
   font-size: 15px;
@@ -364,18 +362,18 @@
 }
 
 .sidebar_ListItemLink__5v_GM:hover {
-  background-color: var(--mauve3);
+  background-color: #444444;
 }
 
 .sidebar_ListItemHeading__ck09H {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 5px;
-  color: var(--violet12);
+  color: #440044;
 }
 
 .sidebar_ListItemText__kbERx {
-  color: var(--mauve11);
+  color: #333333;
   line-height: 1.4;
   font-weight: initial;
 }
@@ -386,14 +384,14 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--purple9) 0%, var(--indigo9) 100%);
+  background: linear-gradient(135deg, #440044 0%, #aa66aa 100%);
   border-radius: 6px;
   padding: 25px;
   text-decoration: none;
   outline: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .sidebar_Callout__VqZLg:focus {
@@ -432,7 +430,7 @@
   transition: transform 250ms ease;
 }
 
-[data-state="open"] > .sidebar_CaretDown__lN3_k {
+[data-state=open] > .sidebar_CaretDown__lN3_k {
   transform: rotate(-180deg);
 }
 
