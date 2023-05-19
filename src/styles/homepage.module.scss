@@ -1,9 +1,21 @@
 @use "globals.module.scss" as *;
 
+.main {
+  display: grid;
+  width: 70vw;
+  margin: 50px auto;
+}
+
 .header {
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $primary-c;
+  background-color: $red0;
 }
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+

@@ -1,6 +1,13 @@
-export interface ListItem {
+interface reactFC {
+  children?: React.ReactNode;
   className?: string;
+}
+
+export interface ListItem extends reactFC {
   href?: string;
-  children: React.ReactNode;
+  title: string;
+}
+
+export interface Sidebar extends reactFC {
   title: string;
 }
