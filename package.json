@@ -28,6 +28,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "eslint-plugin-react-refresh": "^0.4.1",
     "husky": "^8.0.0",
     "sass": "^1.62.1"
   }

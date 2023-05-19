@@ -6,13 +6,15 @@ import styles from "../styles/homepage.module.scss";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <header className={styles.header}>
         <h1>BetFactor</h1>
         <Navbar />
         <AuthDialog />
       </header>
-      <Sidebar></Sidebar>
-    </main>
+      <main className={styles.main}>
+        <Sidebar title="Categories" className={styles.sidebar}></Sidebar>
+      </main>
+    </>
   );
 }
