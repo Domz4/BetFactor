@@ -14,7 +14,7 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 import { ListItem, Sidebar } from "@/components/types/uiTypes";
 import styles from "./sidebar.module.scss";
 
-const Sidebar: FC<Sidebar> = ({ title }) => {
+const Sidebar: FC<Sidebar> = ({ className }) => {
   const mockCategories = () => (
     <>
       <ListItem href="/" title="🇵Poland" />
@@ -23,9 +23,9 @@ const Sidebar: FC<Sidebar> = ({ title }) => {
     </>
   );
   return (
-    <Root className={styles.root} orientation="vertical">
+    <Root className={`${styles.root} ${className}`} orientation="vertical">
       <List className={styles.navlist}>
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title}>Categories</h2>
         <Item className={styles.liItem}>
           <Trigger className={styles.trigger}>
             Football <CaretDownIcon className={styles.CaretDown} aria-hidden />

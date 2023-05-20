@@ -3,6 +3,7 @@ import AuthDialog from "@/components/ui/authDialog/authDialog";
 import Navbar from "../components/ui/navbar/navbar";
 import Sidebar from "@/components/ui/sidebar/sidebar";
 import styles from "../styles/homepage.module.scss";
+import ComboboxComp from "@/components/ui/combobox/comboBox";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
         <AuthDialog />
       </header>
       <main className={styles.main}>
-        <Sidebar title="Categories" className={styles.sidebar}></Sidebar>
+        <ComboboxComp />
+        <Sidebar className={styles.sidebar} />
       </main>
     </>
   );

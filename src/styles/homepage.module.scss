@@ -2,6 +2,8 @@
 
 .main {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
   width: 70vw;
   margin: 50px auto;
 }
@@ -14,8 +16,5 @@
   background-color: $red0;
 }
 .sidebar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  grid-area: 2 / 1 / 3 / 2; 
 }
-

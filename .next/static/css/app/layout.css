@@ -46,6 +46,10 @@ p {
   all: unset;
 }
 
+body {
+  background-color: #141414;
+}
+
 body,
 html {
   height: 100%;

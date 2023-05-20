@@ -8,6 +8,4 @@ export interface ListItem extends reactFC {
   title: string;
 }
 
-export interface Sidebar extends reactFC {
-  title: string;
-}
+export interface Sidebar extends reactFC {}
