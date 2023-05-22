@@ -8,6 +8,14 @@ export interface ListItem extends reactFC {
   title: string;
 }
 
-export interface Sidebar extends reactFC {
-  title: string;
+export interface Sidebar extends reactFC {}
+
+export enum days {
+  MONDAY = "MON",
+  TUESDAY = "TUE",
+  WEDNESDAY = "WED",
+  THURSDAY = "THU",
+  FRIDAY = "FRI",
+  SATURDAY = "SAT",
+  SUNDAY = "SUN",
 }

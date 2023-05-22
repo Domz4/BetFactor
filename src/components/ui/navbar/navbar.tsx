@@ -1,14 +1,7 @@
 "use client";
 import React from "react";
 import { QuestionMarkCircledIcon } from "@radix-ui/react-icons";
-import {
-  Viewport,
-  Link,
-  Root,
-  List,
-  Item,
-  Indicator,
-} from "@radix-ui/react-navigation-menu";
+import { Viewport, Link, Root, List, Item, Indicator } from "@radix-ui/react-navigation-menu";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {

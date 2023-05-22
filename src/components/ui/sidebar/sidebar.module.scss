@@ -31,7 +31,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 }
 
 .liItem {
- border-bottom: 1px solid $gray11;
+  border-bottom: 1px solid $gray11;
 }
 
 %commonStyles {
@@ -67,7 +67,6 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   display: block;
   text-decoration: none;
 }
-
 
 .content {
   position: absolute;
@@ -156,7 +155,6 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   column-gap: 10px;
   list-style: none;
 }
-
 
 .ListItemLink {
   display: block;
