@@ -3,9 +3,9 @@ import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpIcon } from "@radix-ui/react-icons";
 import styles from "./comboBox.module.scss";
 
-type Person = { id: number | null; name: string };
+type Club = { id: number | null; name: string };
 
-const people = [
+const clubs = [
   { id: 1, name: "Real Madrid" },
   { id: 2, name: "Manchester United" },
   { id: 3, name: "Tottenham Hotspur" },
@@ -17,11 +17,11 @@ const ComboboxComp = () => {
   const [selected, setSelected] = useState("");
   const [query, setQuery] = useState("");
 
-  const filteredPeople =
+  const filteredSearch =
     query === ""
-      ? people
-      : people.filter((person) => {
-          return person.name.toLowerCase().includes(query.toLowerCase());
+      ? clubs
+      : clubs.filter((club) => {
+          return club.name.toLowerCase().includes(query.toLowerCase());
         });
 
   return (
@@ -31,7 +31,7 @@ const ComboboxComp = () => {
           <div className={styles.inputWrapper}>
             <Combobox.Input
               className={styles.input}
-              displayValue={(person: Person) => person.name}
+              displayValue={(club: Club) => club.name}
               onChange={(event) => setQuery(event.target.value)}
             />
             <Combobox.Button className={styles.button}>
@@ -46,16 +46,16 @@ const ComboboxComp = () => {
             afterLeave={() => setQuery("")}
           >
             <Combobox.Options className={styles.options}>
-              {filteredPeople.length === 0 && query !== "" ? (
+              {filteredSearch.length === 0 && query !== "" ? (
                 <div className={styles.option}>Nothing found.</div>
               ) : (
-                filteredPeople.map((person) => (
-                  <Combobox.Option key={person.id} value={person}>
+                filteredSearch.map((club) => (
+                  <Combobox.Option key={club.id} value={club}>
                     {({ selected, active }) => (
                       <>
                         <div className={`${styles.option} ${active ? styles.active : ""}`}>
                           <span className={`block truncate ${selected ? styles.selected : ""}`}>
-                            {person.name}
+                            {club.name}
                           </span>
                           {selected ? (
                             <span
