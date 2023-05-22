@@ -35,7 +35,10 @@ const ComboboxComp = () => {
               onChange={(event) => setQuery(event.target.value)}
             />
             <Combobox.Button className={styles.button}>
-              <ChevronUpIcon className={styles.chevronIcon} aria-hidden="true" />
+              <ChevronUpIcon
+                className={styles.chevronIcon}
+                aria-hidden="true"
+              />
             </Combobox.Button>
           </div>
           <Transition
@@ -53,8 +56,16 @@ const ComboboxComp = () => {
                   <Combobox.Option key={club.id} value={club}>
                     {({ selected, active }) => (
                       <>
-                        <div className={`${styles.option} ${active ? styles.active : ""}`}>
-                          <span className={`block truncate ${selected ? styles.selected : ""}`}>
+                        <div
+                          className={`${styles.option} ${
+                            active ? styles.active : ""
+                          }`}
+                        >
+                          <span
+                            className={`block truncate ${
+                              selected ? styles.selected : ""
+                            }`}
+                          >
                             {club.name}
                           </span>
                           {selected ? (
@@ -63,7 +74,10 @@ const ComboboxComp = () => {
                                 active ? styles.active : ""
                               }`}
                             >
-                              <CheckIcon className={styles.checkIcon} aria-hidden="true" />
+                              <CheckIcon
+                                className={styles.checkIcon}
+                                aria-hidden="true"
+                              />
                             </span>
                           ) : null}
                         </div>

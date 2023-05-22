@@ -17,7 +17,14 @@ export default function Home() {
       <main className={styles.main}>
         <ComboboxComp />
         <Sidebar className={styles.sidebar} />
-        <EventCard />
+        <div className={styles.eventCards}>
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+        </div>
       </main>
     </>
   );

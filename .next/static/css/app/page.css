@@ -166,6 +166,7 @@
   justify-content: center;
   z-index: 1;
   text-transform: uppercase;
+  color: #060606;
 }
 
 .navbar_list__I4Afy {
@@ -175,7 +176,7 @@
   padding: 4px;
   border-radius: 6px;
   list-style: none;
-  box-shadow: 0 2px 10px black;
+  box-shadow: 2px 2px 2px black;
   margin: 0;
 }
 
@@ -196,6 +197,7 @@
 .sidebar_title__gDH8j {
   padding: 8px 12px;
   font-size: 20px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -214,11 +216,12 @@
 }
 
 .sidebar_navlist__4_ZK2 {
-  background-color: white;
+  background-color: #141414;
+  border: solid 1px #dddddd;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
-  box-shadow: 2px 2px 20px #ededef;
+  box-shadow: 2px 2px 0px #34343a;
   text-transform: uppercase;
 }
 
@@ -236,13 +239,13 @@
   line-height: 1;
   border-radius: 4px;
   font-size: 13px;
-  color: #141414;
+  color: #dddddd;
 }
 .sidebar_link___6_YB:focus, .sidebar_trigger__0Cqbg:focus {
   box-shadow: 0 0 0 2px #ededef;
 }
 .sidebar_link___6_YB:hover, .sidebar_trigger__0Cqbg:hover {
-  background-color: #ededef;
+  background-color: #1c1c1f;
 }
 
 .sidebar_trigger__0Cqbg {
@@ -301,13 +304,14 @@
 
 .sidebar_arrow__Bf_0c {
   position: relative;
-  top: -20%;
-  left: 25%;
-  background-color: white;
+  top: -15%;
+  left: 50%;
+  background-color: #ec0023;
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
   border-bottom-left-radius: 3px;
+  z-index: 1;
 }
 
 .sidebar_indicator__jQMcM[data-state=visible] {
@@ -319,11 +323,12 @@
 }
 
 .sidebar_viewport__b5_IF {
+  z-index: 99;
   position: relative;
   transform-origin: top center;
   width: 100%;
   margin-left: 10px;
-  background-color: white;
+  background-color: #141414;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
@@ -730,7 +735,8 @@
   margin: 1px 0;
 }
 
-.eventCard_time__JJftA, .eventCard_date__jJ22n {
+.eventCard_time__JJftA,
+.eventCard_date__jJ22n {
   font-size: 11px;
   color: #a09fa6;
 }
@@ -761,8 +767,10 @@
 .homepage_main__97USh {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  width: 75vw;
+  grid-template-rows: max-content 1fr;
+  grid-gap: 1rem;
+  gap: 1rem;
+  width: 80vw;
   margin: 50px auto;
 }
 
@@ -772,8 +780,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ec0023;
+  color: #ffffff;
 }
 
 .homepage_sidebar__fyg1w {
   grid-area: 2/1/3/2;
+}
+
+.homepage_eventCards__QRk24 {
+  grid-area: 2/2/3/3;
+}
+.homepage_eventCards__QRk24 > * {
+  margin-bottom: 1rem;
 }

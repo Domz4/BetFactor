@@ -18,7 +18,9 @@ const button = cva(styles.base, {
       false: styles.nottoggled,
     },
   },
-  compoundVariants: [{ intent: "primary", size: "medium", className: styles.primaryMedium }],
+  compoundVariants: [
+    { intent: "primary", size: "medium", className: styles.primaryMedium },
+  ],
   defaultVariants: {
     intent: "primary",
     size: "medium",
@@ -32,7 +34,13 @@ export interface ButtonProps
   toggable?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ className, intent, size, toggable, ...props }) => {
+export const Button: React.FC<ButtonProps> = ({
+  className,
+  intent,
+  size,
+  toggable,
+  ...props
+}) => {
   const [isToggled, setIsToggled] = useState(false);
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (toggable) {
