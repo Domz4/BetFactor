@@ -1,10 +1,10 @@
 @use "../../../styles/globals.module.scss" as *;
 
 .container {
-  width: 60%;
+  width: 165px;
   .relativeContainer {
     position: relative;
-    margin-top: 0.25rem;
+    margin: 0.5rem 0;
     border-radius: 7px;
     border: solid 2px $white0;
     .input {

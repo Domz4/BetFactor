@@ -20,27 +20,24 @@ const EventCard = () => {
             <span className={styles.time}>18:30 </span>
             <span className={styles.date}>{days.FRIDAY}</span>
           </div>
-          <span className={styles.team}>Liverpool-Chealsea</span>
+          <span className={styles.teams}>Liverpool-Chealsea</span>
         </div>
       </div>
       <div className={styles.btnContainer}>
         <Button toggable={true} intent="primary" size="small">
-          <span>
-            Liverpool <br /> 1.86
-          </span>
+          <span className={styles.team}>Liverpool</span>
+          <br />
+          <span className={styles.odds}>1.86</span>
         </Button>
         <Button toggable={true} intent="primary" size="small">
-          <span>
-            Draw <br />
-            3.45
-          </span>
+          <span className={styles.team}>Draw</span>
+          <br />
+          <span className={styles.odds}>3.86</span>
         </Button>
         <Button toggable={true} intent="primary" size="small">
-          <span>
-            Chealsea
-            <br />
-            1.23
-          </span>
+          <span className={styles.team}>Chealsea</span>
+          <br />
+          <span className={styles.odds}>2.36</span>
         </Button>
       </div>
     </a>

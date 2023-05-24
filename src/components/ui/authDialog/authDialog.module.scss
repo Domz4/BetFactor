@@ -1,18 +1,20 @@
+@use "../../../styles/globals.module.scss" as *;
+
 .root {
   display: flex;
 }
 .overlay {
-  background-color: #110111;
+  background-color: rgba(0,0,0,0.8);
   position: fixed;
   inset: 0;
   animation: overlayShow 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 99;
 }
 
 .content {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  z-index: 100;
+  background-color: $dark0;
+  border-radius: $br-radius;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -22,19 +24,21 @@
   max-height: 85vh;
   padding: 25px;
   animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  border: solid 1px $gray6;
 }
+  
 .content:focus {
   outline: none;
 }
 .title {
   margin: 0;
   font-weight: 500;
-  color: black;
+  color: $white1;
   font-size: 17px;
 }
 .description {
   margin: 10px 0 20px;
-  color: gray;
+  color: $gray9;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -52,7 +56,7 @@
 }
 .button.violet {
   background-color: white;
-  color: #990099;
+  color: $red1;
   box-shadow: 0 2px 10px black;
 }
 .button.violet:hover {
@@ -61,67 +65,74 @@
 .button.violet:focus {
   box-shadow: 0 0 0 2px black;
 }
-.button.green {
-  background-color: green;
-  color: #006813;
+.saveButton {
+  cursor: pointer;
+  font-size: 11px;
+  color: $white1;
+  padding: 0.5rem;
+  border-radius: $br-radius;
+  transition: background-color 100ms;
+  border: solid 1px $white1;
+  &:hover {
+    background-color: $gray0;
+  }
+  focus {
+    box-shadow: 0 0 0 2px green;
+  }
 }
-.buttonGreen:hover {
-  background-color: #004408;
-}
-.button.green:focus {
-  box-shadow: 0 0 0 2px green;
-}
-
 .iconbutton {
   font-family: inherit;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: purple;
+  color: $red0;
   position: absolute;
   top: 10px;
   right: 10px;
-}
-.IconButton:hover {
-  background-color: violet;
-}
-.IconButton:focus {
-  box-shadow: 0 0 0 2px #560064;
-}
 
+  &:hover {
+    background-color: $red2;
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px $red3;
+  }
+  
+}
 .fieldset {
   display: flex;
   gap: 20px;
   align-items: center;
   margin-bottom: 15px;
+  border: none;
 }
 
 .label {
   font-size: 15px;
-  color: #440044;
+  font-weight: bold;
+  color: $white1;
   width: 90px;
   text-align: right;
 }
 
 .input {
+  all: unset;
   width: 100%;
   flex: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: $br-radius;
   padding: 0 10px;
   font-size: 15px;
   line-height: 1;
-  color: #440044;
-  box-shadow: 0 0 0 1px #560064;
+  color: $white1;
   height: 35px;
 }
 .input:focus {
-  box-shadow: 0 0 0 2px #840084;
+  box-shadow: 0 0 0 2px $red1;
 }
 
 @keyframes overlayShow {

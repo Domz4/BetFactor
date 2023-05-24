@@ -6,16 +6,17 @@
 }
 
 .authDialog_overlay__D_7Uh {
-  background-color: #110111;
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   inset: 0;
   animation: authDialog_overlayShow__SfLu7 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 99;
 }
 
 .authDialog_content__KseRM {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
+  z-index: 100;
+  background-color: #060606;
+  border-radius: 7px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,6 +26,7 @@
   max-height: 85vh;
   padding: 25px;
   animation: authDialog_contentShow__Crdgl 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  border: solid 1px #3e3e44;
 }
 
 .authDialog_content__KseRM:focus {
@@ -34,13 +36,13 @@
 .authDialog_title___wnr6 {
   margin: 0;
   font-weight: 500;
-  color: black;
+  color: #ffffff;
   font-size: 17px;
 }
 
 .authDialog_description__VCBjN {
   margin: 10px 0 20px;
-  color: gray;
+  color: #7e7d86;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -59,7 +61,7 @@
 
 .authDialog_button__TBDEk.authDialog_violet__KCvUa {
   background-color: white;
-  color: #990099;
+  color: #c3182c;
   box-shadow: 0 2px 10px black;
 }
 
@@ -71,39 +73,40 @@
   box-shadow: 0 0 0 2px black;
 }
 
-.authDialog_button__TBDEk.authDialog_green__Kzy_1 {
-  background-color: green;
-  color: #006813;
+.authDialog_saveButton__3IDrw {
+  cursor: pointer;
+  font-size: 11px;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 7px;
+  transition: background-color 100ms;
+  border: solid 1px #ffffff;
 }
-
-.authDialog_buttonGreen__uDBg1:hover {
-  background-color: #004408;
+.authDialog_saveButton__3IDrw:hover {
+  background-color: #161618;
 }
-
-.authDialog_button__TBDEk.authDialog_green__Kzy_1:focus {
+.authDialog_saveButton__3IDrw focus {
   box-shadow: 0 0 0 2px green;
 }
 
 .authDialog_iconbutton__r9f2d {
   font-family: inherit;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: purple;
+  color: #ec0023;
   position: absolute;
   top: 10px;
   right: 10px;
 }
-
-.authDialog_IconButton__3T3Gs:hover {
-  background-color: violet;
+.authDialog_iconbutton__r9f2d:hover {
+  background-color: #9e1c1c;
 }
-
-.authDialog_IconButton__3T3Gs:focus {
-  box-shadow: 0 0 0 2px #560064;
+.authDialog_iconbutton__r9f2d:focus {
+  box-shadow: 0 0 0 2px #5e1e1e;
 }
 
 .authDialog_fieldset__srmrJ {
@@ -111,32 +114,34 @@
   gap: 20px;
   align-items: center;
   margin-bottom: 15px;
+  border: none;
 }
 
 .authDialog_label__fgsQm {
   font-size: 15px;
-  color: #440044;
+  font-weight: bold;
+  color: #ffffff;
   width: 90px;
   text-align: right;
 }
 
 .authDialog_input__Nwf_7 {
+  all: unset;
   width: 100%;
   flex: 1 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 7px;
   padding: 0 10px;
   font-size: 15px;
   line-height: 1;
-  color: #440044;
-  box-shadow: 0 0 0 1px #560064;
+  color: #ffffff;
   height: 35px;
 }
 
 .authDialog_input__Nwf_7:focus {
-  box-shadow: 0 0 0 2px #840084;
+  box-shadow: 0 0 0 2px #c3182c;
 }
 
 @keyframes authDialog_overlayShow__SfLu7 {
@@ -172,7 +177,7 @@
 .navbar_list__I4Afy {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #f0f0f0;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
@@ -527,11 +532,11 @@
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/combobox/comboBox.module.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .comboBox_container__1XIkV {
-  width: 60%;
+  width: 165px;
 }
 .comboBox_container__1XIkV .comboBox_relativeContainer__K_2Uv {
   position: relative;
-  margin-top: 0.25rem;
+  margin: 0.5rem 0;
   border-radius: 7px;
   border: solid 2px #dddddd;
 }
@@ -679,7 +684,7 @@
 .button_toggled__57zHA {
   background-color: #ec0023;
   color: #ffffff;
-  box-shadow: 1px 3px 0 0 #5e1e1e;
+  box-shadow: 1px 3px 0 0 #9e1c1c;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/eventCard/eventCard.module.scss ***!
@@ -714,7 +719,6 @@
   grid-area: 2/2/4/3;
   display: flex;
   align-items: center;
-  font-weight: 700;
 }
 .eventCard_btnContainer__U1Hl_ button:first-child,
 .eventCard_btnContainer__U1Hl_ button:nth-child(2) {
@@ -741,9 +745,19 @@
   color: #a09fa6;
 }
 
-.eventCard_team__AsEdX {
+.eventCard_teams__gGUPX {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+.eventCard_team__AsEdX {
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+
+.eventCard_odds__6_FWi {
+  font-weight: 700;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 1200px) {
@@ -761,6 +775,10 @@
     grid-area: 2/1/3/3;
   }
 }
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/betTicket/betCard.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/styles/homepage.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -792,4 +810,8 @@
 }
 .homepage_eventCards__QRk24 > * {
   margin-bottom: 1rem;
+}
+
+.homepage_ticket__EidXN {
+  grid-area: 2/3/3/3;
 }
