@@ -40,7 +40,9 @@ const BetCard: FC<reactFC> = ({ className }) => {
           </List>
           <div className={styles.activeTab}></div>
           <Content className={styles.tabsContent} value="tab1">
-            <p className={styles.text}>Ticket is empty! Please make your predictions</p>
+            <p className={styles.text}>
+              Ticket is empty! Please make your predictions
+            </p>
           </Content>
           <Content className={styles.tabsContent} value="tab2">
             <p className={styles.text}></p>
@@ -51,7 +53,12 @@ const BetCard: FC<reactFC> = ({ className }) => {
                 <label className={styles.label} htmlFor="amount">
                   Amount
                 </label>
-                <input type="number" className={styles.input} id="amount" placeholder="$100" />
+                <input
+                  type="number"
+                  className={styles.input}
+                  id="amount"
+                  placeholder="$100"
+                />
               </fieldset>
               <span className={styles.winning}>Potential winning:</span>
               <span className={styles.tax}>Tax:</span>

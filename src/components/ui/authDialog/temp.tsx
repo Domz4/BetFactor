@@ -24,15 +24,29 @@ const BetCard: FC<reactFC> = ({ className }) => {
             <label className={styles.label} htmlFor="name">
               Name
             </label>
-            <input className={styles.input} id="name" defaultValue="Pedro Duarte" />
+            <input
+              className={styles.input}
+              id="name"
+              defaultValue="Pedro Duarte"
+            />
           </fieldset>
           <fieldset className={styles.fieldset}>
             <label className={styles.label} htmlFor="username">
               Username
             </label>
-            <input className={styles.input} id="username" defaultValue="@peduarte" />
+            <input
+              className={styles.input}
+              id="username"
+              defaultValue="@peduarte"
+            />
           </fieldset>
-          <div style={{ display: "flex", marginTop: 20, justifyContent: "flex-end" }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              justifyContent: "flex-end",
+            }}
+          >
             <button className={styles.button}>Save changes</button>
           </div>
         </Content>
@@ -44,7 +58,11 @@ const BetCard: FC<reactFC> = ({ className }) => {
             <label className={styles.label} htmlFor="currentPassword">
               Current password
             </label>
-            <input className={styles.input} id="currentPassword" type="password" />
+            <input
+              className={styles.input}
+              id="currentPassword"
+              type="password"
+            />
           </fieldset>
           <fieldset className={styles.fieldset}>
             <label className={styles.label} htmlFor="newPassword">
@@ -56,9 +74,19 @@ const BetCard: FC<reactFC> = ({ className }) => {
             <label className={styles.label} htmlFor="confirmPassword">
               Confirm password
             </label>
-            <input className={styles.input} id="confirmPassword" type="password" />
+            <input
+              className={styles.input}
+              id="confirmPassword"
+              type="password"
+            />
           </fieldset>
-          <div style={{ display: "flex", marginTop: 20, justifyContent: "flex-end" }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 20,
+              justifyContent: "flex-end",
+            }}
+          >
             <button className={styles.Button}>Change password</button>
           </div>
         </Content>
