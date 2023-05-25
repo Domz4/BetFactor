@@ -29,13 +29,21 @@ const AuthDialog = () => {
               <label className={styles.label} htmlFor="name">
                 Name
               </label>
-              <input className={styles.input} id="name" placeholder="enter name" />
+              <input
+                className={styles.input}
+                id="name"
+                placeholder="enter name"
+              />
             </fieldset>
             <fieldset className={styles.fieldset}>
               <label className={styles.label} htmlFor="username">
                 Username
               </label>
-              <input className={styles.input} id="username" placeholder="enter username" />
+              <input
+                className={styles.input}
+                id="username"
+                placeholder="enter username"
+              />
             </fieldset>
             <div
               style={{

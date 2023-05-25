@@ -16,7 +16,7 @@
 .authDialog_content__KseRM {
   z-index: 100;
   background-color: #060606;
-  border-radius: 7px;
+  border-radius: 6px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -61,7 +61,7 @@
 
 .authDialog_button__TBDEk.authDialog_violet__KCvUa {
   background-color: white;
-  color: #c3182c;
+  color: #CF0022;
   box-shadow: 0 2px 10px black;
 }
 
@@ -78,7 +78,7 @@
   font-size: 11px;
   color: #ffffff;
   padding: 0.5rem;
-  border-radius: 7px;
+  border-radius: 6px;
   transition: background-color 100ms;
   border: solid 1px #ffffff;
 }
@@ -103,7 +103,7 @@
   right: 10px;
 }
 .authDialog_iconbutton__r9f2d:hover {
-  background-color: #9e1c1c;
+  background-color: #A11026;
 }
 .authDialog_iconbutton__r9f2d:focus {
   box-shadow: 0 0 0 2px #5e1e1e;
@@ -132,7 +132,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: 6px;
   padding: 0 10px;
   font-size: 15px;
   line-height: 1;
@@ -141,7 +141,7 @@
 }
 
 .authDialog_input__Nwf_7:focus {
-  box-shadow: 0 0 0 2px #c3182c;
+  box-shadow: 0 0 0 2px #CF0022;
 }
 
 @keyframes authDialog_overlayShow__SfLu7 {
@@ -626,7 +626,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  border-radius: 7px;
+  border-radius: 6px;
   flex: 1 1 100%;
   text-align: center;
 }
@@ -657,7 +657,7 @@
   text-decoration: none;
 }
 .button_secondary__8vM_e:hover {
-  background-color: #c3182c;
+  background-color: #CF0022;
   text-decoration: none;
 }
 .button_secondary__8vM_e:active {
@@ -684,7 +684,7 @@
 .button_toggled__57zHA {
   background-color: #ec0023;
   color: #ffffff;
-  box-shadow: 1px 3px 0 0 #9e1c1c;
+  box-shadow: 1px 3px 0 0 #A11026;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/eventCard/eventCard.module.scss ***!
@@ -694,7 +694,7 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content 1fr 1fr;
   background: linear-gradient(220deg, #161618, #232326 50%, #161618);
-  border-radius: 7px;
+  border-radius: 6px;
   padding: 1rem;
   height: max-content;
   width: 100%;
@@ -778,7 +778,147 @@
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/betTicket/betCard.module.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.betCard_ticketType__Gvj9I {
+  padding: 0.2rem 1.2rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #CF0022;
+  text-transform: uppercase;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw {
+  border: solid 1px #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw:nth-child(1) {
+  padding: 0.2rem 0.6rem;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw:nth-child(2) {
+  padding: 0.2rem 0.6rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw {
+  font-size: 0.8rem;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw[data-state=active] {
+  color: #141414;
+  background-color: #ffffff;
+  transition: background-color 200ms;
+}
+.betCard_ticketType__Gvj9I .betCard_cardHeader__7QQ2G {
+  font-size: 1.2rem;
+  font-weight: 900;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 
+.betCard_card__jviZp {
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #141414;
+  height: max-content;
+  padding: 1.2rem;
+}
+
+.betCard_details__X754w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.betCard_details__X754w .betCard_moneyDetails__Vyl3L {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.betCard_tabsRoot__lRdF8 {
+  display: flex;
+  flex-direction: column;
+}
+
+.betCard_tabsList__G_u5D {
+  display: flex;
+  justify-content: space-between;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq {
+  border-radius: 6px;
+  padding: 0 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq:hover {
+  color: #141414;
+  background-color: #A11026;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq[data-state=active] {
+  color: #141414;
+  background-color: #ec0023;
+  transition: background-color 300ms;
+}
+
+.betCard_tabsContent__fqVd1 {
+  flex-grow: 1;
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+}
+
+.betCard_text__VhGfM {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.betCard_label__OBDMT {
+  line-height: 1;
+  margin-bottom: 10px;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.betCard_input__XPMiI {
+  all: unset;
+  border: solid 1px #CF0022;
+  flex: 1 0 auto;
+  border-radius: 4px;
+  padding: 0 10px;
+  line-height: 1;
+  color: #ffffff;
+  height: 35px;
+  width: 15%;
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+.betCard_input__XPMiI[type=number] {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+.betCard_button__pARiv {
+  font-size: 0.6rem;
+  width: max-content;
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/styles/homepage.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

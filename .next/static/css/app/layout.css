@@ -42,7 +42,8 @@
 }
 
 button,
-p {
+p,
+fieldset {
   all: unset;
 }
 

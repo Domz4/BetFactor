@@ -797,11 +797,11 @@
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/main/Coding/React/sports-betting/src/app/page": [
-      "static/css/app/page.css"
-    ],
     "/main/Coding/React/sports-betting/src/app/layout": [
       "static/css/app/layout.css"
+    ],
+    "/main/Coding/React/sports-betting/src/app/page": [
+      "static/css/app/page.css"
     ]
   },
   "clientModules": {
@@ -2501,6 +2501,20 @@
       ],
       "async": false
     },
+    "/main/Coding/React/sports-betting/src/styles/global.scss#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/main/Coding/React/sports-betting/node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Kumbh_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"Kumbh\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
     "/main/Coding/React/sports-betting/src/components/ui/authDialog/authDialog.module.scss#": {
       "id": "null",
       "name": "default",
@@ -2604,20 +2618,6 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
-    },
-    "/main/Coding/React/sports-betting/src/styles/global.scss#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/main/Coding/React/sports-betting/node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Kumbh_Sans\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"Kumbh\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
     }
   }
 }
