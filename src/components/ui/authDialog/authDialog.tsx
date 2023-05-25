@@ -32,7 +32,7 @@ const AuthDialog = () => {
               <input
                 className={styles.input}
                 id="name"
-                defaultValue="Pedro Duarte"
+                placeholder="enter name"
               />
             </fieldset>
             <fieldset className={styles.fieldset}>
@@ -42,7 +42,7 @@ const AuthDialog = () => {
               <input
                 className={styles.input}
                 id="username"
-                defaultValue="@peduarte"
+                placeholder="enter username"
               />
             </fieldset>
             <div
@@ -53,7 +53,7 @@ const AuthDialog = () => {
               }}
             >
               <Close asChild>
-                <button className={styles.buttonGreen}>Save changes</button>
+                <button className={styles.saveButton}>Save changes</button>
               </Close>
             </div>
             <Close asChild>

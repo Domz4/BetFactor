@@ -5,6 +5,7 @@ import Sidebar from "@/components/ui/sidebar/sidebar";
 import styles from "../styles/homepage.module.scss";
 import ComboboxComp from "@/components/ui/combobox/comboBox";
 import EventCard from "@/components/ui/eventCard/eventCard";
+import BetCard from "@/components/ui/betTicket/betCard";
 
 export default function Home() {
   return (
@@ -17,7 +18,15 @@ export default function Home() {
       <main className={styles.main}>
         <ComboboxComp />
         <Sidebar className={styles.sidebar} />
-        <EventCard />
+        <div className={styles.eventCards}>
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+        </div>
+        <BetCard className={styles.ticket} />
       </main>
     </>
   );

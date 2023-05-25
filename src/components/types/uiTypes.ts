@@ -1,4 +1,4 @@
-interface reactFC {
+export interface reactFC {
   children?: React.ReactNode;
   className?: string;
 }

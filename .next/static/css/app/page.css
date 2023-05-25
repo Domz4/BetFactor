@@ -6,16 +6,17 @@
 }
 
 .authDialog_overlay__D_7Uh {
-  background-color: #110111;
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   inset: 0;
   animation: authDialog_overlayShow__SfLu7 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 99;
 }
 
 .authDialog_content__KseRM {
-  background-color: white;
+  z-index: 100;
+  background-color: #060606;
   border-radius: 6px;
-  box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,6 +26,7 @@
   max-height: 85vh;
   padding: 25px;
   animation: authDialog_contentShow__Crdgl 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  border: solid 1px #3e3e44;
 }
 
 .authDialog_content__KseRM:focus {
@@ -34,13 +36,13 @@
 .authDialog_title___wnr6 {
   margin: 0;
   font-weight: 500;
-  color: black;
+  color: #ffffff;
   font-size: 17px;
 }
 
 .authDialog_description__VCBjN {
   margin: 10px 0 20px;
-  color: gray;
+  color: #7e7d86;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -59,7 +61,7 @@
 
 .authDialog_button__TBDEk.authDialog_violet__KCvUa {
   background-color: white;
-  color: #990099;
+  color: #CF0022;
   box-shadow: 0 2px 10px black;
 }
 
@@ -71,39 +73,40 @@
   box-shadow: 0 0 0 2px black;
 }
 
-.authDialog_button__TBDEk.authDialog_green__Kzy_1 {
-  background-color: green;
-  color: #006813;
+.authDialog_saveButton__3IDrw {
+  cursor: pointer;
+  font-size: 11px;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 100ms;
+  border: solid 1px #ffffff;
 }
-
-.authDialog_buttonGreen__uDBg1:hover {
-  background-color: #004408;
+.authDialog_saveButton__3IDrw:hover {
+  background-color: #161618;
 }
-
-.authDialog_button__TBDEk.authDialog_green__Kzy_1:focus {
+.authDialog_saveButton__3IDrw focus {
   box-shadow: 0 0 0 2px green;
 }
 
 .authDialog_iconbutton__r9f2d {
   font-family: inherit;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: purple;
+  color: #ec0023;
   position: absolute;
   top: 10px;
   right: 10px;
 }
-
-.authDialog_IconButton__3T3Gs:hover {
-  background-color: violet;
+.authDialog_iconbutton__r9f2d:hover {
+  background-color: #A11026;
 }
-
-.authDialog_IconButton__3T3Gs:focus {
-  box-shadow: 0 0 0 2px #560064;
+.authDialog_iconbutton__r9f2d:focus {
+  box-shadow: 0 0 0 2px #5e1e1e;
 }
 
 .authDialog_fieldset__srmrJ {
@@ -111,32 +114,34 @@
   gap: 20px;
   align-items: center;
   margin-bottom: 15px;
+  border: none;
 }
 
 .authDialog_label__fgsQm {
   font-size: 15px;
-  color: #440044;
+  font-weight: bold;
+  color: #ffffff;
   width: 90px;
   text-align: right;
 }
 
 .authDialog_input__Nwf_7 {
+  all: unset;
   width: 100%;
   flex: 1 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 0 10px;
   font-size: 15px;
   line-height: 1;
-  color: #440044;
-  box-shadow: 0 0 0 1px #560064;
+  color: #ffffff;
   height: 35px;
 }
 
 .authDialog_input__Nwf_7:focus {
-  box-shadow: 0 0 0 2px #840084;
+  box-shadow: 0 0 0 2px #CF0022;
 }
 
 @keyframes authDialog_overlayShow__SfLu7 {
@@ -166,16 +171,17 @@
   justify-content: center;
   z-index: 1;
   text-transform: uppercase;
+  color: #060606;
 }
 
 .navbar_list__I4Afy {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #f0f0f0;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
-  box-shadow: 0 2px 10px black;
+  box-shadow: 2px 2px 2px black;
   margin: 0;
 }
 
@@ -196,6 +202,7 @@
 .sidebar_title__gDH8j {
   padding: 8px 12px;
   font-size: 20px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -214,11 +221,12 @@
 }
 
 .sidebar_navlist__4_ZK2 {
-  background-color: white;
+  background-color: #141414;
+  border: solid 1px #dddddd;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
-  box-shadow: 2px 2px 20px #ededef;
+  box-shadow: 2px 2px 0px #34343a;
   text-transform: uppercase;
 }
 
@@ -236,13 +244,13 @@
   line-height: 1;
   border-radius: 4px;
   font-size: 13px;
-  color: #141414;
+  color: #dddddd;
 }
 .sidebar_link___6_YB:focus, .sidebar_trigger__0Cqbg:focus {
   box-shadow: 0 0 0 2px #ededef;
 }
 .sidebar_link___6_YB:hover, .sidebar_trigger__0Cqbg:hover {
-  background-color: #ededef;
+  background-color: #1c1c1f;
 }
 
 .sidebar_trigger__0Cqbg {
@@ -301,13 +309,14 @@
 
 .sidebar_arrow__Bf_0c {
   position: relative;
-  top: -20%;
-  left: 25%;
-  background-color: white;
+  top: -15%;
+  left: 50%;
+  background-color: #ec0023;
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
   border-bottom-left-radius: 3px;
+  z-index: 1;
 }
 
 .sidebar_indicator__jQMcM[data-state=visible] {
@@ -319,11 +328,12 @@
 }
 
 .sidebar_viewport__b5_IF {
+  z-index: 99;
   position: relative;
   transform-origin: top center;
   width: 100%;
   margin-left: 10px;
-  background-color: white;
+  background-color: #141414;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: hsla(206, 22%, 7%, 0.35) 0px 10px 38px -10px, hsla(206, 22%, 7%, 0.2) 0px 10px 20px -15px;
@@ -522,11 +532,11 @@
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/combobox/comboBox.module.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .comboBox_container__1XIkV {
-  width: 60%;
+  width: 165px;
 }
 .comboBox_container__1XIkV .comboBox_relativeContainer__K_2Uv {
   position: relative;
-  margin-top: 0.25rem;
+  margin: 0.5rem 0;
   border-radius: 7px;
   border: solid 2px #dddddd;
 }
@@ -616,7 +626,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  border-radius: 7px;
+  border-radius: 6px;
   flex: 1 1 100%;
   text-align: center;
 }
@@ -647,7 +657,7 @@
   text-decoration: none;
 }
 .button_secondary__8vM_e:hover {
-  background-color: #c3182c;
+  background-color: #CF0022;
   text-decoration: none;
 }
 .button_secondary__8vM_e:active {
@@ -674,7 +684,7 @@
 .button_toggled__57zHA {
   background-color: #ec0023;
   color: #ffffff;
-  box-shadow: 1px 3px 0 0 #5e1e1e;
+  box-shadow: 1px 3px 0 0 #A11026;
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/eventCard/eventCard.module.scss ***!
@@ -684,7 +694,7 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: min-content 1fr 1fr;
   background: linear-gradient(220deg, #161618, #232326 50%, #161618);
-  border-radius: 7px;
+  border-radius: 6px;
   padding: 1rem;
   height: max-content;
   width: 100%;
@@ -709,7 +719,6 @@
   grid-area: 2/2/4/3;
   display: flex;
   align-items: center;
-  font-weight: 700;
 }
 .eventCard_btnContainer__U1Hl_ button:first-child,
 .eventCard_btnContainer__U1Hl_ button:nth-child(2) {
@@ -730,14 +739,25 @@
   margin: 1px 0;
 }
 
-.eventCard_time__JJftA, .eventCard_date__jJ22n {
+.eventCard_time__JJftA,
+.eventCard_date__jJ22n {
   font-size: 11px;
   color: #a09fa6;
 }
 
-.eventCard_team__AsEdX {
+.eventCard_teams__gGUPX {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+.eventCard_team__AsEdX {
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+
+.eventCard_odds__6_FWi {
+  font-weight: 700;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 1200px) {
@@ -755,14 +775,160 @@
     grid-area: 2/1/3/3;
   }
 }
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/components/ui/betTicket/betCard.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.betCard_ticketType__Gvj9I {
+  padding: 0.2rem 1.2rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #CF0022;
+  text-transform: uppercase;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw {
+  border: solid 1px #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw:nth-child(1) {
+  padding: 0.2rem 0.6rem;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw:nth-child(2) {
+  padding: 0.2rem 0.6rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw {
+  font-size: 0.8rem;
+}
+.betCard_ticketType__Gvj9I .betCard_ticketTrigger__Wpszw[data-state=active] {
+  color: #141414;
+  background-color: #ffffff;
+  transition: background-color 200ms;
+}
+.betCard_ticketType__Gvj9I .betCard_cardHeader__7QQ2G {
+  font-size: 1.2rem;
+  font-weight: 900;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.betCard_card__jviZp {
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #141414;
+  height: max-content;
+  padding: 1.2rem;
+}
+
+.betCard_details__X754w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.betCard_details__X754w .betCard_moneyDetails__Vyl3L {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.betCard_tabsRoot__lRdF8 {
+  display: flex;
+  flex-direction: column;
+}
+
+.betCard_tabsList__G_u5D {
+  display: flex;
+  justify-content: space-between;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq {
+  border-radius: 6px;
+  padding: 0 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq:hover {
+  color: #141414;
+  background-color: #A11026;
+}
+.betCard_tabsList__G_u5D .betCard_tabsTrigger__vHjxq[data-state=active] {
+  color: #141414;
+  background-color: #ec0023;
+  transition: background-color 300ms;
+}
+
+.betCard_tabsContent__fqVd1 {
+  flex-grow: 1;
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+}
+
+.betCard_text__VhGfM {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.betCard_label__OBDMT {
+  line-height: 1;
+  margin-bottom: 10px;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.betCard_input__XPMiI {
+  all: unset;
+  border: solid 1px #CF0022;
+  flex: 1 0 auto;
+  border-radius: 4px;
+  padding: 0 10px;
+  line-height: 1;
+  color: #ffffff;
+  height: 35px;
+  width: 15%;
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+.betCard_input__XPMiI[type=number] {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+.betCard_button__pARiv {
+  font-size: 0.6rem;
+  width: max-content;
+}
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[2]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[10].use[3]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[10].use[4]!./node_modules/.pnpm/next@13.4.2_@babel+core@7.21.8_react-dom@18.2.0_react@18.2.0_sass@1.62.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[10].use[5]!./src/styles/homepage.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .homepage_main__97USh {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  width: 75vw;
+  grid-template-rows: max-content 1fr;
+  grid-gap: 1rem;
+  gap: 1rem;
+  width: 80vw;
   margin: 50px auto;
 }
 
@@ -772,8 +938,20 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ec0023;
+  color: #ffffff;
 }
 
 .homepage_sidebar__fyg1w {
   grid-area: 2/1/3/2;
+}
+
+.homepage_eventCards__QRk24 {
+  grid-area: 2/2/3/3;
+}
+.homepage_eventCards__QRk24 > * {
+  margin-bottom: 1rem;
+}
+
+.homepage_ticket__EidXN {
+  grid-area: 2/3/3/3;
 }

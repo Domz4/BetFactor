@@ -1,29 +1,44 @@
-$red0: #ec0023;
-$red1: #c3182c;
-$red2: #5e1e1e;
-$blue0: #1c71d8;
-$blue1: #5890b6;
-$blue2: #5581af;
+$red0:    #ec0023;
+$red1:    #CF0022;
+$red2:    #A11026;
+$red3:    #5e1e1e;
+$blue0:   #18ACED;
+$blue1:   #0872A1;
+$blue2:   #5581af;
 $yellow0: #f2cc21;
-$dark0: #060606;
-$dark1: #141414;
-$white0: #dddddd;
-$white1: #ffffff;
-$white2: #f0f0f0;
-$gray0: #161618;
-$gray1: #1c1c1f;
-$gray2: #232326;
-$gray3: #28282c;
-$gray4: #2e2e32;
-$gray5: #34343a;
-$gray6: #3e3e44;
-$gray7: #504f57;
-$gray8: #706f78;
-$gray9: #7e7d86;
-$gray10: #a09fa6;
-$gray11: #ededef;
+$dark0:   #060606;
+$dark1:   #141414;
+$white0:  #dddddd;
+$white1:  #ffffff;
+$white2:  #f0f0f0;
+$gray0:   #161618;
+$gray1:   #1c1c1f;
+$gray2:   #232326;
+$gray3:   #28282c;
+$gray4:   #2e2e32;
+$gray5:   #34343a;
+$gray6:   #3e3e44;
+$gray7:   #504f57;
+$gray8:   #706f78;
+$gray9:   #7e7d86;
+$gray10:  #a09fa6;
+$gray11:  #ededef;
 
-$br-radius: 7px;
+$br-radius: 6px;
+$font-mini: 0.5rem;
 $font-sm: 0.875rem;
 $font-md: 1rem;
 $font-lg: 1.4rem;
+
+$size1: 0.2rem;
+$size2: 0.6rem;
+$size3: 1.0rem;
+$size4: 1.2rem;
+$size5: 2.4rem;
+$size6: 4.8rem;
+
+
+
+@mixin borderStyling($color) {
+  border: solid 1px $color;
+}
