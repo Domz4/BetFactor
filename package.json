@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "prepare": "husky install",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 3333",
     "build-storybook": "storybook build"
   },
   "dependencies": {

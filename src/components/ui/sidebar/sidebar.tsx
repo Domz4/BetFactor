@@ -11,10 +11,10 @@ import {
   Viewport,
 } from "@radix-ui/react-navigation-menu";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-import { ListItem, Sidebar } from "@/components/types/uiTypes";
+import { ListItem, reactFC } from "@/components/types/uiTypes";
 import styles from "./sidebar.module.scss";
 
-const Sidebar: FC<Sidebar> = ({ className }) => {
+const Sidebar: FC<reactFC> = ({ className }) => {
   const mockCategories = () => (
     <>
       <ListItem href="/" title="🇵Poland" />
@@ -31,9 +31,7 @@ const Sidebar: FC<Sidebar> = ({ className }) => {
             Football <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
           <Content className={styles.content}>
-            <ul className={`${styles.List} ${styles.one}`}>
-              {mockCategories()}
-            </ul>
+            <ul className={`${styles.List} ${styles.one}`}>{mockCategories()}</ul>
           </Content>
         </Item>
         <Item className={styles.liItem}>
@@ -41,16 +39,13 @@ const Sidebar: FC<Sidebar> = ({ className }) => {
             Tenis <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
           <Content className={styles.content}>
-            <ul className={`${styles.List} ${styles.two}`}>
-              {mockCategories()}
-            </ul>
+            <ul className={`${styles.List} ${styles.two}`}>{mockCategories()}</ul>
           </Content>
         </Item>
 
         <Item className={styles.liItem}>
           <Trigger className={styles.trigger}>
-            Martial Arts{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Martial Arts <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 
@@ -62,15 +57,13 @@ const Sidebar: FC<Sidebar> = ({ className }) => {
 
         <Item className={styles.liItem}>
           <Trigger className={styles.trigger}>
-            Volleyball{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Volleyball <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 
         <Item>
           <Trigger className={styles.trigger}>
-            Basketball{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Basketball <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 

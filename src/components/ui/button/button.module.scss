@@ -30,8 +30,10 @@
 }
 
 .secondary {
+  border: none;
   color: $white0;
   background-color: $red0;
+  box-shadow: 1px 3px 0 0 $red2;
 
   &:focus {
     text-decoration: none;
@@ -65,7 +67,23 @@
 }
 
 .toggled {
-  background-color: $red0;
-  color: $white1;
-  box-shadow: 1px 3px 0 0 $red2;
+  &:not(.primary) {
+    background-color: $white1;
+    color: $dark1;
+    box-shadow: 1px 3px 0 0 $white2;
+    &:active {
+      box-shadow: rgba(0, 0, 0, 0.525) 0 3px 5px inset;
+      outline: 0;
+    }
+  }
+
+  &.primary {
+    background-color: $red0;
+    color: $white1;
+    box-shadow: 1px 3px 0 0 $red2;
+    &:active {
+      box-shadow: rgba(0, 0, 0, 0.525) 0 3px 5px inset;
+      outline: 0;
+    }
+  }
 }
