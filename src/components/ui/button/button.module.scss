@@ -2,10 +2,12 @@
 
 .base {
   cursor: pointer;
+  text-transform: uppercase;
   user-select: none;
   border-radius: $br-radius;
   flex: 1 1 100%;
   text-align: center;
+  font-weight: 500;
 }
 
 .primary {
@@ -60,10 +62,6 @@
   font-size: $font-md;
   line-height: 1rem;
   padding: 0.5rem 1rem;
-}
-
-.primaryMedium {
-  text-transform: uppercase;
 }
 
 .toggled {
