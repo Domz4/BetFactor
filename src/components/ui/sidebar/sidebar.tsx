@@ -11,7 +11,7 @@ import {
   Viewport,
 } from "@radix-ui/react-navigation-menu";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-import { ListItem, reactFC } from "@/components/types/uiTypes";
+import { ListItemProp, reactFC } from "@/components/types/uiTypes";
 import styles from "./sidebar.module.scss";
 
 const Sidebar: FC<reactFC> = ({ className }) => {
@@ -31,9 +31,7 @@ const Sidebar: FC<reactFC> = ({ className }) => {
             Football <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
           <Content className={styles.content}>
-            <ul className={`${styles.List} ${styles.one}`}>
-              {mockCategories()}
-            </ul>
+            <ul className={`${styles.List} ${styles.one}`}>{mockCategories()}</ul>
           </Content>
         </Item>
         <Item className={styles.liItem}>
@@ -41,16 +39,13 @@ const Sidebar: FC<reactFC> = ({ className }) => {
             Tenis <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
           <Content className={styles.content}>
-            <ul className={`${styles.List} ${styles.two}`}>
-              {mockCategories()}
-            </ul>
+            <ul className={`${styles.List} ${styles.two}`}>{mockCategories()}</ul>
           </Content>
         </Item>
 
         <Item className={styles.liItem}>
           <Trigger className={styles.trigger}>
-            Martial Arts{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Martial Arts <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 
@@ -62,15 +57,13 @@ const Sidebar: FC<reactFC> = ({ className }) => {
 
         <Item className={styles.liItem}>
           <Trigger className={styles.trigger}>
-            Volleyball{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Volleyball <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 
         <Item>
           <Trigger className={styles.trigger}>
-            Basketball{" "}
-            <CaretDownIcon className={styles.CaretDown} aria-hidden />
+            Basketball <CaretDownIcon className={styles.CaretDown} aria-hidden />
           </Trigger>
         </Item>
 
@@ -86,7 +79,7 @@ const Sidebar: FC<reactFC> = ({ className }) => {
   );
 };
 
-const ListItem = React.forwardRef<HTMLAnchorElement, ListItem>(
+export const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProp>(
   ({ className, children, title, ...props }, forwardedRef) => (
     <li>
       <Link asChild className={className}>
