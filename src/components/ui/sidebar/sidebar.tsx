@@ -17,9 +17,9 @@ import styles from "./sidebar.module.scss";
 const Sidebar: FC<reactFC> = ({ className }) => {
   const mockCategories = () => (
     <>
-      <ListItem href="/" title="🇵Poland" />
-      <ListItem href="/" title="🇪Spain" />
-      <ListItem href="/" title="🏴󠁧󠁢󠁥󠁮󠁧󠁿England" />
+      <ListItem className={styles.listitem} href="/" title="🇵Poland" />
+      <ListItem className={styles.listitem} href="/" title="🇪Spain" />
+      <ListItem className={styles.listitem} href="/" title="🏴󠁧󠁢󠁥󠁮󠁧󠁿England" />
     </>
   );
   return (

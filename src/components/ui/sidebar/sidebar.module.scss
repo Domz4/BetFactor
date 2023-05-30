@@ -75,7 +75,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: max-content;
   animation-duration: 200ms;
   animation-timing-function: ease;
 }
@@ -154,10 +154,12 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 
 .List {
   display: grid;
-  padding: 22px;
-  margin: 0;
+  padding: $size1;
   column-gap: 10px;
   list-style: none;
+}
+
+.listitem {
 }
 
 .ListItemLink {
@@ -324,3 +326,4 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
     opacity: 0;
   }
 }
+
