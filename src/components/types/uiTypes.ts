@@ -3,12 +3,10 @@ export interface reactFC {
   className?: string;
 }
 
-export interface ListItem extends reactFC {
+export interface ListItemProp extends reactFC {
   href?: string;
   title: string;
 }
-
-export interface Sidebar extends reactFC {}
 
 export enum days {
   MONDAY = "MON",

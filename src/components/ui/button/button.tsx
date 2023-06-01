@@ -18,9 +18,6 @@ const button = cva(styles.base, {
       false: styles.nottoggled,
     },
   },
-  compoundVariants: [
-    { intent: "primary", size: "medium", className: styles.primaryMedium },
-  ],
   defaultVariants: {
     intent: "primary",
     size: "medium",

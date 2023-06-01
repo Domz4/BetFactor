@@ -1,11 +1,10 @@
 @use "../../../styles/globals.module.scss" as *;
-
 $itemPadding: 8px 12px;
 $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 
 .title {
   padding: $itemPadding;
-  font-size: 20px;
+  font-size: $size4;
   color: $white1;
   text-transform: uppercase;
 }
@@ -16,6 +15,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   width: max-content;
   z-index: 1;
 }
+
 .root[data-orietation="vertical"] {
   flex-direction: column;
   width: 20px;
@@ -24,8 +24,8 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 
 .navlist {
   background-color: $dark1;
-  border: solid 1px $white0;
-  padding: 4px;
+  border: solid 1px $gray2;
+  padding: $size2;
   border-radius: 6px;
   list-style: none;
   box-shadow: 2px 2px 0px $gray5;
@@ -33,18 +33,19 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 }
 
 .liItem {
-  border-bottom: 1px solid $gray11;
+  border-bottom: 1px solid $gray2;
 }
 
 %commonStyles {
   padding: $itemPadding;
   outline: none;
   user-select: none;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
-  border-radius: 4px;
-  font-size: 13px;
+  border-radius: $br-radius;
+  font-size: $size2;
   color: $white0;
+  white-space: nowrap;
 
   &:focus {
     box-shadow: 0 0 0 2px $gray11;
@@ -74,8 +75,8 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  animation-duration: 250ms;
+  width: max-content;
+  animation-duration: 200ms;
   animation-timing-function: ease;
 }
 .content[data-motion="from-start"] {
@@ -103,7 +104,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   height: 10px;
   overflow: hidden;
   z-index: 1;
-  transition: width, transform 300ms ease;
+  transition: width, transform 120ms ease;
   right: -20px;
 }
 
@@ -111,7 +112,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   position: relative;
   top: -15%;
   left: 50%;
-  background-color: $red0;
+  background-color: $red1;
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -120,10 +121,10 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 }
 
 .indicator[data-state="visible"] {
-  animation: fadeIn 200ms ease;
+  animation: fadeIn 120ms ease;
 }
 .indicator[data-state="hidden"] {
-  animation: fadeOut 200ms ease;
+  animation: fadeOut 120ms ease;
 }
 
 .viewport {
@@ -131,14 +132,13 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   position: relative;
   transform-origin: top center;
   width: 100%;
-  margin-left: 10px;
-  background-color: $dark1;
-  border-radius: 6px;
+  margin-left: 20px;
+  background-color: $red1;
+  border-radius: $br-radius;
   overflow: hidden;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   height: var(--radix-navigation-menu-viewport-height);
-  transition: width, height, 300ms ease;
+  transition: width, height, 200ms ease;
 }
 .viewport[data-state="open"] {
   animation: scaleIn 200ms ease;
@@ -154,10 +154,12 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
 
 .List {
   display: grid;
-  padding: 22px;
-  margin: 0;
+  padding: $size1;
   column-gap: 10px;
   list-style: none;
+}
+
+.listitem {
 }
 
 .ListItemLink {
@@ -174,7 +176,7 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
   box-shadow: 0 0 0 2px $gray10;
 }
 .ListItemLink:hover {
-  background-color: $gray11;
+  background-color: $red2;
 }
 
 .ListItemHeading {
@@ -324,3 +326,4 @@ $itemWidth: calc(100% - 2 * #{nth($itemPadding, 2)});
     opacity: 0;
   }
 }
+
